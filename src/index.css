@@ -28,15 +28,15 @@
 .main {
   display: flex;
   flex-direction: column;
-  /* background-color: #000; */
+  background-color: #000;
 }
 
 .main h1 {
   margin-top: 20px;
   text-align: center;
   font: 'Times New Roman';
-  /* color: #fff; */
-  color: black;
+  color: #fff;
+  /* color: black; */
 }
 
 .main hr {
@@ -49,4 +49,39 @@
   text-align: center;
   margin-top: 30px;
   position: relative;
+}
+
+.main .twoSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.main .twoSection img {
+  width: 50%;
+}
+
+.main .twoSection p {
+  width: 40%;
+  text-align: justify;
+  color: #fff;
+}
+
+.footer {
+  background-color: green;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
 }

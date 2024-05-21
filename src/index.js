@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import dp from './avatar1.png';
 import './index.css';
 
 function Portfolio() {
@@ -11,7 +12,7 @@ function Portfolio() {
       <main className="main">
         <Main />
       </main>
-      <footer>
+      <footer className="footer">
         <Footer />
       </footer>
     </>
@@ -39,7 +40,7 @@ const Main = () => {
       <hr />
       <h2>About Me</h2>
       <div className="twoSection">
-        <img src="./avatar1.png" alt="avatar" />
+        <img src={dp} alt="avatar" />
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
           quia ut fuga sapiente ipsam consectetur vitae ex iure. Iure ut
@@ -64,7 +65,20 @@ const Main = () => {
     </>
   );
 };
-const Footer = () => {};
+const Footer = () => {
+  return (
+    <>
+      <ul>
+        <li>Linkedln</li> <span>|</span>
+        <li>Twitter</li> <span>|</span>
+        <li>GitHub</li> <span>|</span>
+        <li>Facebook</li> <span>|</span>
+        <li>Instagram</li> <span>|</span>
+        <li>Website</li>
+      </ul>
+    </>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
