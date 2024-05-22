@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import dp from './avatar1.png';
+import dp from './avatar2.png';
+import astro from './astro.avif';
+import cube from './cube.avif';
+import cup from './cup.avif';
+import traveler from './traveler.avif';
 import './index.css';
 
 function Portfolio() {
@@ -40,7 +44,9 @@ const Main = () => {
       <hr />
       <h2>About Me</h2>
       <div className="twoSection">
-        <img src={dp} alt="avatar" />
+        <div className="wrapper">
+          <img src={dp} alt="avatar" />
+        </div>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
           quia ut fuga sapiente ipsam consectetur vitae ex iure. Iure ut
@@ -62,9 +68,35 @@ const Main = () => {
           velit ipsa? Voluptatum.
         </p>
       </div>
+      <section className="projects">
+        <h2>Projects</h2>
+        <div className="projectsWrapper">
+          <Projects />
+        </div>
+      </section>
     </>
   );
 };
+
+const Projects = () => {
+  return (
+    <>
+      <div className="grid">
+        <img src={cup} alt="cup" />
+      </div>
+      <div className="grid">
+        <img src={cube} alt="cube" />
+      </div>
+      <div className="grid">
+        <img src={traveler} alt="traveler" />
+      </div>
+      <div className="grid">
+        <img src={astro} alt="astro" />
+      </div>
+    </>
+  );
+};
+
 const Footer = () => {
   return (
     <>
