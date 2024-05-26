@@ -95,7 +95,7 @@
 
 .main .projects .projectsWrapper .grid img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .footer {
